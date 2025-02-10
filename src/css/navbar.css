@@ -1,0 +1,22 @@
+.navbar{
+    @apply flex justify-between relative;
+}
+.navbar-container{
+    @apply absolute md:static left-0 right-0 md:left-auto md:right-auto md:flex justify-between;
+}
+.nav-menu{
+    @apply block py-3 px-8 text-center md:px-5 cursor-pointer hover:bg-blue-600 dark:hover:bg-gray-600 md:hidden;
+}
+.nav-ul{
+    @apply absolute md:flex flex-col md:flex-row justify-between gap-0 md:gap-3 p-2;
+    @apply w-full md:w-auto top-18 bg-blue-500 dark:bg-gray-900 md:top-0 md:relative md:bg-transparent;
+}
+.nav-ul::after{
+    @apply pt-2;
+}
+.nav-li{
+    @apply hover:bg-blue-600 dark:hover:bg-violet-700 rounded;
+}
+.nav-li a{
+    @apply block py-3 px-3 text-start md:px-5;
+}

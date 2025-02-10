@@ -1,0 +1,9 @@
+.card{
+    @apply bg-gray-200 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm p-3 my-3 hover:shadow-lg transition text-start;
+}
+.card h3{
+    @apply text-lg font-semibold text-gray-800 dark:text-white;
+}
+.card p{
+    @apply text-gray-600 dark:text-gray-400;
+}

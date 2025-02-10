@@ -1,0 +1,401 @@
+.features{
+    @apply py-16 bg-gray-100 dark:bg-gray-800;
+}
+.features .container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.features .heading{
+    @apply text-center mb-12;
+}
+.features .heading h2{
+    @apply text-3xl font-bold text-gray-800 dark:text-gray-100;
+}
+.features .heading p{
+    @apply text-gray-600 dark:text-gray-400 mt-4;
+}
+.features .contents{
+    @apply grid md:grid-cols-3 gap-8;
+}
+.features .feature{
+    @apply text-center bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm p-6 hover:shadow-lg transition;
+}
+.features .feature .icon{
+    @apply text-blue-600 dark:text-blue-400 mb-4;
+}
+.features .feature h3{
+    @apply text-xl font-bold text-gray-800 dark:text-gray-200 mb-2;
+}
+.features .feature p{
+    @apply text-gray-600 dark:text-gray-400;
+}
+
+/* Features 2 Section */
+.features-2{
+    @apply bg-gray-50 dark:bg-gray-900 py-16;
+}
+.features-2 .container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.features-2 .heading{
+    @apply text-center mb-12;
+}
+.features-2 .heading h2{
+    @apply text-3xl font-extrabold text-gray-800 dark:text-white;
+}
+.features-2 .heading p{
+    @apply mt-4 text-gray-600 dark:text-gray-400;
+}
+.features-2 .contents{
+    @apply grid md:grid-cols-3 gap-8;
+}
+.features-2 .feature{
+    @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm p-6 hover:shadow-lg transition;
+}
+.features-2 .feature .icon{
+    @apply text-blue-600 dark:text-blue-400 mb-4;
+}
+.features-2 .feature h3{
+    @apply text-xl font-semibold text-gray-800 dark:text-white mb-3;
+}
+.features-2 .feature p{
+    @apply text-gray-600 dark:text-gray-400 mb-4;
+}
+.features-2 .feature a{
+    @apply text-blue-600 hover:underline font-medium dark:text-blue-400;
+}
+
+/* Features 3 Section */
+.features-3{
+    @apply bg-white dark:bg-gray-900 py-16;
+}
+.features-3 .container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.features-3 .heading{
+    @apply text-center mb-12;
+}
+.features-3 .heading h2{
+    @apply text-3xl font-extrabold text-gray-800 dark:text-white;
+}
+.features-3 .heading p{
+    @apply mt-4 text-gray-600 dark:text-gray-300;
+}
+.features-3 .contents{
+    @apply grid md:grid-cols-3 gap-8;
+}
+.features-3 .feature{
+    @apply bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm p-6 hover:shadow-lg transition;
+}
+.features-3 .feature .icon{
+    @apply text-blue-600 dark:text-blue-400 mb-4;
+}
+.features-3 .feature h3{
+    @apply text-xl font-semibold text-gray-800 dark:text-white mb-3;
+}
+.features-3 .feature p{
+    @apply text-gray-600 dark:text-gray-300 mb-4;
+}
+.features-3 .feature a{
+    @apply text-blue-600 dark:text-blue-400 hover:underline font-medium;
+}
+
+/* Feadbacks Section */
+.feedbacks{
+    @apply py-16 bg-gray-50 dark:bg-gray-900;
+}
+.feedbacks .container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.feedbacks .heading{
+    @apply text-center mb-12;
+}
+.feedbacks .heading h2{
+    @apply text-3xl font-extrabold text-gray-800 dark:text-white;
+}
+.feedbacks .heading p{
+    @apply mt-4 text-gray-600 dark:text-gray-300;
+}
+.feedbacks .contents{
+    @apply grid md:grid-cols-3 gap-8;
+}
+.feedbacks .feature{
+    @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm p-6 hover:shadow-lg transition;
+}
+.feedbacks .feature .heading{
+    @apply flex items-center mb-4;
+}
+.feedbacks .feature .heading img{
+    @apply w-12 h-12 rounded-full;
+}
+.feedbacks .feature .heading .content{
+    @apply ml-4 text-start;
+}
+.feedbacks .feature .heading .content h3{
+    @apply text-lg font-bold text-gray-800 dark:text-white;
+}
+.feedbacks .feature .heading .content p{
+    @apply text-sm text-gray-600 dark:text-gray-400 !m-0;
+}
+.feedbacks .feature p{
+    @apply text-gray-600 dark:text-gray-300 mb-4;
+}
+
+/* Prices Section */
+.prices{
+    @apply py-16 bg-gray-50 dark:bg-gray-900;
+}
+.prices .container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.prices .heading{
+    @apply text-center mb-12;
+}
+.prices .heading h2{
+    @apply text-3xl font-extrabold text-gray-800 dark:text-white;
+}
+.prices .heading p{
+    @apply mt-4 text-gray-600 dark:text-gray-400;
+}
+.prices .contents{
+    @apply grid md:grid-cols-3 gap-8;
+}
+.prices .plan{
+    @apply bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700;
+}
+.prices .plan h3{
+    @apply text-xl font-semibold text-gray-800 dark:text-white text-center mb-4;
+}
+.prices .plan p{
+    @apply text-center text-gray-600 dark:text-gray-300 mb-6;
+}
+.prices .plan .amount{
+    @apply text-center mb-6;
+}
+.prices .plan .amount .digit{
+    @apply text-4xl font-extrabold text-gray-800 dark:text-white;
+}
+.prices .plan .amount span{
+    @apply text-sm text-gray-600 dark:text-gray-400;
+}
+.prices .plan ul{
+    @apply space-y-4 mb-6;
+}
+.prices .plan ul li{
+    @apply flex items-center text-gray-600 dark:text-gray-300;
+}
+.prices .plan a{
+    @apply block text-center bg-blue-600 text-white font-medium py-3 rounded-lg hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600;
+}
+.prices .plan a.pro{
+    @apply bg-gray-700 hover:bg-gray-800 transition dark:bg-gray-600 dark:hover:bg-gray-700;
+}
+
+/* Pro Plan */
+.prices .pro-plan{
+    @apply bg-blue-50 border border-blue-500 rounded-lg shadow-sm p-6 hover:shadow-lg transition dark:bg-blue-900 dark:border-blue-700;
+}
+.prices .pro-plan h3{
+    @apply text-xl font-semibold text-blue-700 dark:text-blue-300 text-center mb-4;
+}
+.prices .pro-plan p{
+    @apply text-center text-blue-700 dark:text-blue-400 mb-6;
+}
+.prices .pro-plan .amount{
+    @apply text-center mb-6;
+}
+.prices .pro-plan .amount .digit{
+    @apply text-4xl font-extrabold text-blue-700 dark:text-blue-300;
+}
+.prices .pro-plan .amount span{
+    @apply text-sm text-blue-600 dark:text-blue-500;
+}
+.prices .pro-plan ul{
+    @apply space-y-4 mb-6;
+}
+.prices .pro-plan ul li{
+    @apply flex items-center text-blue-700 dark:text-blue-300;
+}
+.prices .pro-plan a{
+    @apply block text-center bg-blue-700 text-white font-medium py-3 rounded-lg hover:bg-blue-800 transition dark:bg-blue-600 dark:hover:bg-blue-700;
+}
+
+/* Articles Section */
+.articles{
+    @apply py-16 bg-gray-50 dark:bg-gray-900;
+}
+.articles .container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.articles .heading{
+    @apply text-center mb-12;
+}
+.articles .heading h2{
+    @apply text-3xl font-extrabold text-gray-800 dark:text-white;
+}
+.articles .heading p{
+    @apply mt-4 text-gray-600 dark:text-gray-400;
+}
+.articles .contents{
+    @apply grid md:grid-cols-3 gap-8;
+}
+.card{
+    @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-lg transition;
+}
+.card img{
+    @apply rounded-t-lg w-full;
+}
+.card-body{
+    @apply p-6;
+}
+.card-body h3{
+    @apply text-lg font-bold text-gray-800 dark:text-white mb-2;
+}
+.card-body p{
+    @apply text-gray-600 dark:text-gray-400 mb-4;
+}
+.card-body a{
+    @apply text-blue-600 dark:text-blue-400 hover:underline font-medium;
+}
+
+/* Single Article Page */
+.page{
+    @apply py-16 bg-gray-50 dark:bg-gray-900;
+}
+.page .container{
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+.page .container img{
+    @apply text-center;
+}
+.page .heading{
+    @apply text-center mb-8;
+}
+.page .heading h1{
+    @apply text-4xl font-extrabold text-gray-800 dark:text-white leading-tight mb-4;
+}
+.page .heading p{
+    @apply text-gray-600 dark:text-gray-400;
+}
+.page .content{
+    @apply max-w-none text-gray-800 dark:text-gray-200 mb-12;
+}
+.page .related{
+    @apply border-t border-gray-200 dark:border-gray-700  pt-8;
+}
+.page .related h3{
+    @apply text-2xl font-bold text-gray-800 dark:text-white mb-4;
+}
+.page .related .container{
+    @apply grid md:grid-cols-2 xl:grid-cols-4 gap-6 p-0;
+}
+.page .related .link{
+    @apply flex items-center bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm p-4 hover:shadow-lg transition;
+}
+.page .related .link h4{
+    @apply text-lg font-bold text-gray-800 dark:text-white;
+}
+.page .related .link p{
+    @apply text-gray-600 dark:text-gray-400 text-sm;
+}
+
+/* Call to Action */
+.call-to-action{
+    @apply bg-blue-600 py-16 dark:bg-blue-950;
+}
+
+.call-to-action .container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.call-to-action .body{
+    @apply text-center text-white dark:text-white;
+}
+.call-to-action .body h2{
+    @apply text-4xl font-extrabold mb-4;
+}
+.call-to-action .body p{
+    @apply text-lg mb-8;
+}
+.call-to-action .btn-group{
+    @apply flex flex-col md:flex-row items-center justify-center gap-6;
+}
+.call-to-action .button-1{
+    @apply px-8 py-4 bg-white text-blue-600 text-lg font-medium rounded-lg shadow hover:bg-gray-100 hover:text-blue-700 transition dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-blue-300;
+}
+.call-to-action .button-2{
+    @apply px-8 py-4 bg-transparent border border-white text-white text-lg font-medium rounded-lg hover:bg-white hover:text-blue-600 transition dark:bg-transparent dark:border-gray-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-blue-300;
+}
+
+
+/* Contact Form */
+.contact-form{
+    @apply bg-gray-50 py-16 dark:bg-gray-800;
+}
+.contact-form .container{
+    @apply w-full mx-auto px-4 sm:px-6 lg:px-8;
+}
+.contact-form .heading{
+    @apply text-center mb-8;
+}
+.contact-form .heading h2{
+    @apply text-3xl font-extrabold text-gray-800 dark:text-white mb-4;
+}
+.contact-form .heading p{
+    @apply text-gray-600 dark:text-gray-300;
+}
+.contact-form form{
+    @apply bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md;
+}
+.contact-form form .form-group{
+    @apply mb-6;
+}
+.contact-form form label{
+    @apply block text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+.contact-form form .form-control{
+    @apply mt-1 block w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400;
+}
+.contact-form form input,
+.contact-form form textarea{
+    @apply mt-1 block w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400;
+}
+.contact-form form textarea{
+    @apply h-40;
+}
+.contact-form form button{
+    @apply px-8 py-3 bg-blue-600 text-white font-medium text-lg rounded-lg shadow hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600;
+}
+
+/* Single Page */
+.single-page{
+    @apply bg-gray-50 py-16 dark:bg-gray-800;
+}
+.single-page .container{
+    @apply w-full mx-auto px-4 sm:px-6 lg:px-8;
+}
+.single-page .container .content-group{
+    @apply grid lg:grid-cols-3 gap-8;
+}
+.single-page .container .content-group .main-content{
+    @apply lg:col-span-2;
+}
+.single-page .container .content-group .main-content .article-header{
+    @apply text-center mb-8;
+}
+.single-page .container .content-group .main-content .article-header h1{
+    @apply text-4xl font-extrabold text-gray-800 dark:text-white leading-tight mb-4;
+}
+.single-page .container .content-group .main-content .article-header p.meta{
+    @apply text-gray-600 dark:text-gray-300;
+}
+.single-page .container .content-group .main-content .article-header p.meta span.highlight{
+    @apply font-medium text-blue-600 dark:text-blue-400;
+}
+.single-page .container .content-group .main-content .article-content{
+    @apply max-w-none text-gray-800 dark:text-gray-300;
+}
+.single-page .container .content-group .sidebar{
+    @apply lg:col-span-1;
+}
+.single-page .container .content-group .sidebar .widget{
+    @apply bg-white border border-gray-200 rounded-lg shadow-sm p-6 mb-8 dark:bg-gray-700 dark:border-gray-600;
+}

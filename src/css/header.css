@@ -1,0 +1,13 @@
+.header{
+    @apply opacity-90 bg-blue-500 text-white dark:bg-gray-900 dark:text-white;
+    @apply fixed top-0 z-50 left-0 right-0;
+}
+.wrapper{
+    @apply container mx-auto;
+}
+.title{
+    @apply py-2 pl-3 md:pl-0 font-bold text-amber-500;
+}
+.description{
+    @apply text-sm text-violet-50 dark:text-violet-300;
+}

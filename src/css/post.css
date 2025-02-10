@@ -1,0 +1,25 @@
+.post-title{
+    @apply text-3xl font-bold text-gray-800 dark:text-white;
+}
+.post-image{
+    @apply h-[250px] relative overflow-hidden;
+}
+.post-image .overlay{
+    @apply absolute top-10 left-0 right-0 bottom-10 bg-blue-500 dark:bg-gray-950 opacity-80;
+    @apply flex justify-center items-center;
+}
+.post-image img{
+    @apply h-[250px] w-full object-cover object-center;
+}
+.post-image .wrapper h2{
+    @apply text-center text-white font-bold text-3xl;
+}
+.post-image .wrapper p{
+    @apply text-center font-semibold text-gray-50 dark:text-gray-200;
+}
+.post-content{
+    @apply mt-5;
+}
+.post-content a{
+    @apply text-blue-600 hover:text-green-600 dark:text-blue-400 hover:dark:text-green-400;
+}

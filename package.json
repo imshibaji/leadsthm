@@ -1,0 +1,37 @@
+{
+  "name": "leadthm",
+  "version": "1.0.0",
+  "scripts": {
+    "js": "rollup -c --watch",
+    "js:build": "rollup -c",
+    "css": "npx @tailwindcss/cli -i ./src/main.css -o ./assets/css/style.css --watch",
+    "css:build": "npx @tailwindcss/cli -i ./src/main.css -o ./assets/css/style.css --minify",
+    "dev": "parcel watch --no-source-maps && npm run css",
+    "build": "npm run js:build && npm run css:build",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.3",
+    "alpinejs": "^3.14.8",
+    "animate.css": "^4.1.1",
+    "moment": "^2.30.1",
+    "motion": "^12.0.11",
+    "tailwindcss": "^4.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-replace": "^6.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^22.13.1",
+    "rollup": "^4.34.1",
+    "rollup-plugin-copy": "^3.5.0"
+  }
+}

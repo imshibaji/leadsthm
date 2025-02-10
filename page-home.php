@@ -1,0 +1,20 @@
+<?php 
+get_template_part('common/header');
+get_template_part('common/banner');
+?>
+<div class="wrapper">
+    <?php if ( have_posts() ) : 
+        while ( have_posts() ) : the_post(); ?>
+        <div class="post">
+            <h2 class="post-title text-center text-7xl mt-3"><?php the_title(); ?></h2>
+            <p class="text-center mb-3"><?php echo get_the_excerpt(); ?></p>
+            <div class="post-content">
+                <?php the_content(); ?>
+            </div>
+        </div>
+    <?php 
+        endwhile;
+        endif;
+    ?>
+</div>
+<?php get_template_part('common/footer'); ?>

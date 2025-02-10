@@ -1,0 +1,12 @@
+@import "animate.css";
+@import "tailwindcss";
+
+@import './css/theme.css';  
+@import './css/header.css';
+@import './css/navbar.css';
+@import './css/banner.css';
+@import './css/footer.css';
+@import './css/forms.css';
+@import './css/post.css';
+@import './css/card.css';
+/* @import './css/page.css'; */
