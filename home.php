@@ -19,7 +19,7 @@ if ($page->have_posts()):
             </div>
         </div>
     <?php else: ?>
-        <div class="wrapper mt-22">
+        <div class="wrapper mt-22 px-3 md:px-0">
             <h2 class="post-title text-start text-7xl mt-3"><?php single_post_title(); ?></h2>
             <p class="text-start mb-3"><?php echo get_the_excerpt(); ?></p>
             <hr class="styled-separator is-style-wide" aria-hidden="true" />
@@ -29,7 +29,7 @@ if ($page->have_posts()):
 <!-- page-content -->
 <div class="wrapper mb-4">
     <div class="post">
-        <div class="post-content py-2">
+        <div class="post-content">
             <div class="grid md:grid-cols-3 gap-5">
                 <?php if (have_posts()) :
                     while (have_posts()) : the_post(); ?>

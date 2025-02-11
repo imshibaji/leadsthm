@@ -6,7 +6,7 @@
 }
 .post-image .overlay{
     @apply absolute top-10 left-0 right-0 bottom-10 bg-blue-500 dark:bg-gray-950 opacity-80;
-    @apply flex justify-center items-center;
+    @apply flex justify-center items-center px-3;
 }
 .post-image img{
     @apply h-[250px] w-full object-cover object-center;
@@ -18,7 +18,7 @@
     @apply text-center font-semibold text-gray-50 dark:text-gray-200;
 }
 .post-content{
-    @apply mt-5;
+    @apply mt-5 px-3 md:px-0;
 }
 .post-content a{
     @apply text-blue-600 hover:text-green-600 dark:text-blue-400 hover:dark:text-green-400;

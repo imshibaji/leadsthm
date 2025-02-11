@@ -15,7 +15,7 @@ get_template_part('common/header');
                 </div>
             </div>
         <?php else: ?>
-            <div class="wrapper mt-22">
+            <div class="wrapper mt-22 px-3 md:px-0">
                 <h2 class="post-title text-start text-7xl mt-3"><?php the_title(); ?></h2>
                 <p class="text-start mb-3"><?php echo get_the_excerpt(); ?></p>
                 <hr class="styled-separator is-style-wide" aria-hidden="true" />
@@ -23,7 +23,7 @@ get_template_part('common/header');
         <?php endif; ?>
         <div class="wrapper mb-4">
             <div class="post">
-                <div class="post-content py-2">
+                <div class="post-content">
                     <?php the_content(); ?>
                 </div>
             </div>

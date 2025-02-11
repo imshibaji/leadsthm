@@ -23,10 +23,10 @@ add_action('after_setup_theme', 'custom_menu_setup');
 
 function custom_logo_setup() {
     add_theme_support('custom-logo', array(
-        'height'      => 400,  // Set a default height
-        'width'       => 400,  // Set a default width
-        'flex-height' => false, // Allow flexible height
-        'flex-width'  => false, // Allow flexible width
+        'height'      => 200,  // Set a default height
+        'width'       => 200,  // Set a default width
+        'flex-height' => true, // Allow flexible height
+        'flex-width'  => true, // Allow flexible width
         'header-text' => array('site-title', 'site-description'), // Support text logo fallback
     ));
 }

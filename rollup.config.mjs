@@ -3,9 +3,7 @@ import nodeResolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import terser from "@rollup/plugin-terser";
 import copy from 'rollup-plugin-copy';
-import {existsSync, rmdirSync} from 'fs';
-
-if(existsSync('dist')) rmdirSync('dist', {recursive:true, force:true});
+import del from 'rollup-plugin-delete';
 
 export default {
     input: 'src/main.js',
@@ -20,12 +18,13 @@ export default {
         plugins: [terser()]
     }],
     plugins: [
+        del({ targets: 'dist/*' }),
         copy({
             targets: [
-                { src: 'assets/css/*', dest: 'dist/leadthm/assets/css'},
-                { src: 'assets/imgs/*', dest: 'dist/leadthm/assets/imgs'},
-                { src: 'assets/js/bundle.min.js', dest: 'dist/leadthm/assets/js'},
-                { src: 'assets/webfonts/*', dest: 'dist/leadthm/assets/webfonts'},
+                { src: 'assets/css/*', dest: 'dist/leadthm/assets/css' },
+                { src: 'assets/imgs/*', dest: 'dist/leadthm/assets/imgs' },
+                { src: 'assets/js/bundle.min.js', dest: 'dist/leadthm/assets/js' },
+                { src: 'assets/webfonts/*', dest: 'dist/leadthm/assets/webfonts' },
                 { src: 'common/**/*', dest: 'dist/leadthm/common' },
                 { src: 'pages/**/*', dest: 'dist/leadthm/pages' },
                 { src: 'functions.php', dest: 'dist/leadthm' },
