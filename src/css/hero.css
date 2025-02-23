@@ -1,0 +1,9 @@
+#hero .link{
+    @apply text-indigo-600 dark:text-indigo-500 font-semibold;
+}
+#hero .circle{
+    @apply w-[400px] h-[400px] rounded-[50%] overflow-hidden shadow-lg;
+}
+#hero span {
+    @apply text-indigo-600 dark:text-indigo-500 font-bold;
+}

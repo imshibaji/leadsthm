@@ -1,5 +1,5 @@
 <?php 
-add_action('init', function() {
+function custom_init() {
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
     add_post_type_support('page', 'excerpt');
@@ -9,7 +9,8 @@ add_action('init', function() {
         wp_enqueue_style('leadthm', get_template_directory_uri() . '/assets/css/style.css');
         wp_enqueue_script('leadthm', get_template_directory_uri() . '/assets/js/bundle.min.js', array('jquery'), '1.0.0', true);
     }
-});
+}
+add_action('init', 'custom_init');
 
 function custom_menu_setup() {
     register_nav_menus(array(
@@ -139,6 +140,129 @@ function customize_banner_image($wp_customize) {
 }
 add_action('customize_register', 'customize_banner_image');
 
+
+function customize_hero_banner($wp_customize){
+    $wp_customize->add_section('hero_banner', array(
+        'title'    => __('Hero Banner', 'leadthm'),
+        'priority' => 30,
+    ));
+
+    $wp_customize->add_setting('hero_banner_image_style', array(
+        'default'   => 'circle',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_banner_image_style', array(
+        'label'   => __('Title Section', 'leadthm'),
+        'section' => 'hero_banner',
+        'type'    => 'select',
+        'choices' => array(
+            'circle' => 'Circle Image',
+            'square' => 'Square Image',
+        ),
+    ));
+
+    $wp_customize->add_setting('hero_banner_image', array(
+        'default'   => get_template_directory_uri() . '/assets/imgs/ileadsPro-Business-Owner.jpg',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_banner_image', array(
+        'label'    => __('Upload Hero Banner Image', 'leadthm'),
+        'section'  => 'hero_banner',
+        'settings' => 'hero_banner_image',
+    )));
+
+    $wp_customize->add_setting('hero_banner_title', array(
+        'default'   => 'Best Pre Sales, Leads Management, Quotations & Invoicing Software for Small Businesses',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_banner_title', array(
+        'label'   => __('Title Section', 'leadthm'),
+        'section' => 'hero_banner',
+        'type'    => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_banner_description', array(
+        'default'   => '<a href="#" class="link">Join now More than hundred</a> of Small Businesses are using iLeadsPro to manage their leads, quotations, invoices and more.',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_banner_description', array(
+        'label'   => __('Description Section', 'leadthm'),
+        'section' => 'hero_banner',
+        'type'    => 'textarea',
+    ));
+
+    $wp_customize->add_setting('hero_banner_download_text', array(
+        'default'   => '(Free) Download Now',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_banner_download_text', array(
+        'label'   => __('Download Link', 'leadthm'),
+        'section' => 'hero_banner',
+        'type'    => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_banner_download_icon', array(
+        'default'   => 'fa fa-solid fa-download',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_banner_download_icon', array(
+        'label'   => __('Download Icon', 'leadthm'),
+        'section' => 'hero_banner',
+        'type'    => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_banner_download_link', array(
+        'default'   => '#',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_banner_download_link', array(
+        'label'   => __('Download Link for Hero Banner', 'leadthm'),
+        'section' => 'hero_banner',
+        'type'    => 'text',
+    ));
+
+    ///
+    $wp_customize->add_setting('hero_banner_premium_demo_text', array(
+        'default'   => 'Book Demo For Premium',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_banner_premium_demo_text', array(
+        'label'   => __('Premium Demo Text', 'leadthm'),
+        'section' => 'hero_banner',
+        'type'    => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_banner_premium_demo_link', array(
+        'default'   => '#',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_banner_premium_demo_link', array(
+        'label'   => __('Premium Demo Link', 'leadthm'),
+        'section' => 'hero_banner',
+        'type'    => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_banner_highlight', array(
+        'default'   => '✔ Paid plans starting from ₹33/month',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_banner_highlight', array(
+        'label'   => __('Plan highlight Section', 'leadthm'),
+        'section' => 'hero_banner',
+        'type'    => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_banner_highlights', array(
+        'default'   => '<p>⭐ 4.7+ Google Play Store</p><p>⭐ 4.6+ Apple Store</p><p>✅ ISO Certified</p>',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_banner_highlights', array(
+        'label'   => __('highlights Section', 'leadthm'),
+        'section' => 'hero_banner',
+        'type'    => 'text',
+    ));
+}
+add_action('customize_register', 'customize_hero_banner');
 
 function add_menu_icon_field($item_id, $item, $depth, $args) {
     $icon = get_post_meta($item_id, '_menu_item_icon', true);  
