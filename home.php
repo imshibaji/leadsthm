@@ -25,7 +25,7 @@ if ($page->have_posts()):
             <hr class="styled-separator is-style-wide" aria-hidden="true" />
         </div>
     <?php endif; ?>
-<?php endif; ?>
+<?php wp_reset_postdata(); endif; ?>
 <!-- page-content -->
 <div class="wrapper mb-4">
     <div class="post">
